@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# source bash profile to get environment variables set
+[ -f "$HOME/.bash_profile" ] && source "$HOME/.bash_profile"
+
+# install Daptiv projects
+PROJECTS=( pm-dashboard )
+PROJECTS_SETUP="$HOME/.daptiv-dotfiles/projects/setup"
+if [ -f "$PROJECTS_SETUP" ]; then
+  for PROJECT in ${PROJECTS[@]}
+  do
+    bash "$PROJECTS_SETUP" $PROJECT
+  done
+fi

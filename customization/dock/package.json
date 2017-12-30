@@ -1,0 +1,11 @@
+{
+  "name": "dock",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "simple-plist": "^0.2.1"
+  },
+  "license": "Unlicense"
+}

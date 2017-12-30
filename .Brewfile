@@ -40,7 +40,7 @@ brew "p7zip"
 cask "box-sync"
 cask "dotnet-sdk"
 #cask "flash"
-cask lastpass
+cask "lastpass"
 cask "microsoft-office"
 cask "mightytext"
 #cask "onedrive"

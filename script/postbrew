@@ -38,3 +38,12 @@ fi
 #---------------------------------------------------------------------
 # personal="$HOME/src/personal-configuration/setup.sh"
 #[ -f "$personal" ] && bash "$personal"
+
+# TODO
+# open '/usr/local/Caskroom/lastpass/latest/LastPass Installer/LastPass Installer.app'
+# smart switch?
+# waterfox?
+
+# Re-install App Store apps
+mas install 1295203466 450283360
+

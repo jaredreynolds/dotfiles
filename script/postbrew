@@ -57,3 +57,16 @@ yarn install
 yarn start
 killall Dock
 popd
+
+# Link p4merge
+ln -fs ~/.dotfiles/files/p4merge ~/bin/p4merge
+
+# Config git
+git config --global alias.dt difftool
+git config --global alias.mt mergetool
+git config --global core.editor "code -nw"
+git config --global core.excludesfile "~/.dotfiles/files/gitignore"
+git config --global hub.protocol https
+git config --global merge.tool p4merge
+git config --global mergetool.keepTemporaries false
+git config --global mergetool.prompt false

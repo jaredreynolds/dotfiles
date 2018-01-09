@@ -4,6 +4,8 @@
 
 export USER_PROFILE_LOADED="1"
 export PATH=$PATH:~/bin
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 export DB_SERVER_NAME=WIN-2012R2
 
 source "/usr/local/etc/bash_completion.d/git-completion.bash"

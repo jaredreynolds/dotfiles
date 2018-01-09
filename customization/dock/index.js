@@ -1,6 +1,7 @@
 'use strict'
 
 const orderedWhitelist = [
+    'Activity Monitor',
     'Amazon Music',
     'Microsoft Outlook',
     'Slack',

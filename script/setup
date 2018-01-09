@@ -20,3 +20,9 @@ ensure_dotfile_link() {
 
 # use the ensure_dotfile_link command to link files into your home directory
 ensure_dotfile_link .Brewfile
+ensure_dotfile_link .Daptiv.Brewfile.blacklist
+
+# fix home/end key bindings
+KEYBINDINGS=~/Library/KeyBindings
+[ ! -d $KEYBINDINGS ] && mkdir $KEYBINDINGS
+ln -sfv $USER_DOTFILES/files/DefaultKeyBinding.dict $KEYBINDINGS/DefaultKeyBinding.dict

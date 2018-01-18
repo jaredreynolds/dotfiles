@@ -25,4 +25,4 @@ ensure_dotfile_link .Daptiv.Brewfile.blacklist
 # fix home/end key bindings
 KEYBINDINGS=~/Library/KeyBindings
 [ ! -d $KEYBINDINGS ] && mkdir $KEYBINDINGS
-ln -sfv $USER_DOTFILES/files/DefaultKeyBinding.dict $KEYBINDINGS/DefaultKeyBinding.dict
+cp -fv $USER_DOTFILES/files/DefaultKeyBinding.dict $KEYBINDINGS/DefaultKeyBinding.dict

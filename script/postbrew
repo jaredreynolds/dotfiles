@@ -49,7 +49,10 @@ fi
 # waterfox?
 
 # Re-install App Store apps
-mas install 1295203466 450283360
+# 1295203466 = MS Remote Desktop
+# 450283360  = Producteev
+# 967004861  = HP Easy Scan
+mas install 1295203466 450283360 967004861
 
 # Customize dock
 pushd $USER_DOTFILES/customization/dock

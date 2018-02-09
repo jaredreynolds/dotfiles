@@ -8,6 +8,8 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export DB_SERVER_NAME=WIN-2012R2
 
+alias yarnl="yarn install --pure-lockfile"
+
 source "/usr/local/etc/bash_completion.d/git-completion.bash"
 
 __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"

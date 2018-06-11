@@ -57,6 +57,7 @@ mas install 1295203466 450283360 967004861
 
 # Customize dock
 pushd $USER_DOTFILES/customization/dock
+npm install -g yarn
 yarn install
 yarn start
 killall Dock

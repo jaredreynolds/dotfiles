@@ -23,10 +23,6 @@ echo "Configuring projects"
 SETUP_SCRIPT="$HOME/.daptiv-dotfiles/projects/setup"
 if [ -f "$SETUP_SCRIPT" ]; then
   # you can comment out any project you don't wish to include by putting a # at the beginning of the line
-  bash "$SETUP_SCRIPT" delegates
-  bash "$SETUP_SCRIPT" foxglove
-  # bash "$SETUP_SCRIPT" ppm
-  bash "$SETUP_SCRIPT" ppmspa
   # bash "$SETUP_SCRIPT" ttm
   bash "$SETUP_SCRIPT" pmdashboard
   # bash "$SETUP_SCRIPT" dtb
@@ -53,7 +49,8 @@ fi
 # 1295203466 = MS Remote Desktop
 # 450283360  = Producteev
 # 967004861  = HP Easy Scan
-mas install 1295203466 450283360 967004861
+# 926036361  = LastPass
+mas install 1295203466 450283360 967004861 926036361
 
 # Customize dock
 pushd $USER_DOTFILES/customization/dock
@@ -64,6 +61,7 @@ killall Dock
 popd
 
 # Link p4merge
+mkdir -p -m u=rwx,g=,o= ~/bin
 ln -fs ~/.dotfiles/files/p4merge ~/bin/p4merge
 
 # Config git

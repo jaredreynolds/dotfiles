@@ -73,3 +73,15 @@ git config --global hub.protocol https
 git config --global merge.tool p4merge
 git config --global mergetool.keepTemporaries false
 git config --global mergetool.prompt false
+
+# Add newer bash to allowed shells
+NEWBASH=/usr/local/bin/bash
+gawk -v newbash=$NEWBASH '             \
+  {                                    \
+    if ($1 == newbash) { exists = 1 }  \
+    print                              \
+  }                                    \
+  END { if (exists != 1) { print newbash } }' /etc/shells | sudo tee /etc/shells > /dev/null
+
+# Set newer bash as default
+[ "$SHELL" != "$NEWBASH" ] && sudo chsh -s $NEWBASH $USER

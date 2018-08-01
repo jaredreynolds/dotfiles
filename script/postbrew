@@ -84,4 +84,4 @@ gawk -v newbash=$NEWBASH '             \
   END { if (exists != 1) { print newbash } }' /etc/shells | sudo tee /etc/shells > /dev/null
 
 # Set newer bash as default
-[ "$SHELL" != "$NEWBASH" ] && sudo chsh -s $NEWBASH $USER
+if [ "$SHELL" != "$NEWBASH" ]; then sudo chsh -s $NEWBASH $USER; fi

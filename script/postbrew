@@ -76,12 +76,7 @@ git config --global mergetool.prompt false
 
 # Add newer bash to allowed shells
 NEWBASH=/usr/local/bin/bash
-gawk -v newbash=$NEWBASH '             \
-  {                                    \
-    if ($1 == newbash) { exists = 1 }  \
-    print                              \
-  }                                    \
-  END { if (exists != 1) { print newbash } }' /etc/shells | sudo tee /etc/shells > /dev/null
+!(grep -q "$NEWBASH" /etc/shells) && echo $NEWBASH | sudo tee -a /etc/shells > /dev/null
 
 # Set newer bash as default
 if [ "$SHELL" != "$NEWBASH" ]; then sudo chsh -s $NEWBASH $USER; fi

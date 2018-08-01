@@ -10,7 +10,14 @@ export DB_SERVER_NAME=WIN-2012R2
 
 alias yarnl="yarn install --pure-lockfile"
 
-source "/usr/local/etc/bash_completion.d/git-completion.bash"
+# Load all autocompletions if any are installed
+if [ -d /usr/local/etc/bash_completion.d ]; then
+    for F in "/usr/local/etc/bash_completion.d/"*; do
+        if [ -f "${F}" ]; then
+            source "${F}";
+        fi
+    done
+fi
 
 __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
 if [ -f "$__GIT_PROMPT_DIR/gitprompt.sh" ]; then

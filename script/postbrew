@@ -50,7 +50,8 @@ fi
 # 585829637  = Todoist
 # 967004861  = HP Easy Scan
 # 926036361  = LastPass
-mas install 1295203466 585829637 967004861 926036361
+# 905264208  = Disk Cartography
+mas install 1295203466 585829637 967004861 926036361 905264208
 
 # Customize dock
 pushd $USER_DOTFILES/customization/dock

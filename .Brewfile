@@ -56,7 +56,7 @@ cask "osxfuse"
 #cask "p4merge" - merged into p4v
 cask "p4v"
 cask "powershell"
-cask "razer-synapse"
+#cask "razer-synapse"
 cask "royal-tsx"
 #cask "scribus"
 cask "spectacle"

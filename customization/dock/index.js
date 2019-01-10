@@ -6,12 +6,12 @@ const orderedWhitelist = [
     'Microsoft Outlook',
     'Slack',
     'Microsoft OneNote',
-    'Producteev',
     'Google Chrome',
     'Firefox',
     'iTerm',
     'VirtualBox',
     'Visual Studio Code',
+    'Microsoft Remote Desktop',
     'Postman'
 ]
 

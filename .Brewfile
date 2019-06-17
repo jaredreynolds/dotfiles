@@ -11,7 +11,6 @@
 #
 
 #tap "boxen/brews"
-tap "caskroom/drivers"
 #tap "homebrew/versions"
 #brew "ack"
 ##brew "augeas"

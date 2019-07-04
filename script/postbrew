@@ -23,12 +23,12 @@ echo "Configuring projects"
 SETUP_SCRIPT="$HOME/.daptiv-dotfiles/projects/setup"
 if [ -f "$SETUP_SCRIPT" ]; then
   # you can comment out any project you don't wish to include by putting a # at the beginning of the line
-  # bash "$SETUP_SCRIPT" ttm
-  bash "$SETUP_SCRIPT" pmdashboard
+  # bash "$SETUP_SCRIPT" cognos
   # bash "$SETUP_SCRIPT" dtb
   bash "$SETUP_SCRIPT" new-feature-popup
+  bash "$SETUP_SCRIPT" portainer
   # bash "$SETUP_SCRIPT" react-theme
-  # bash "$SETUP_SCRIPT" cognos
+  # bash "$SETUP_SCRIPT" ttm
   echo "Finished configuring projects"
 fi
 
@@ -45,6 +45,18 @@ fi
 # smart switch?
 # waterfox?
 
+# Require login to App Store
+set +e
+mas account > /dev/null
+EXITCODE=$?
+set -e
+if [ $EXITCODE != 0 ]; then
+  echo
+  echo -e "\e[92mLog into the App Store!\e[0m"
+  echo Then press a key to continue...
+  read -sn 1
+fi
+
 # Re-install App Store apps
 # 1295203466 = MS Remote Desktop
 # 585829637  = Todoist
@@ -58,7 +70,7 @@ pushd $USER_DOTFILES/customization/dock
 npm install -g yarn
 yarn install
 yarn start
-killall Dock
+sudo killall Dock
 popd
 
 # Link p4merge

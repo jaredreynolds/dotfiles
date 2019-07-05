@@ -2,17 +2,14 @@
 
 const orderedWhitelist = [
     'Activity Monitor',
-    'Amazon Music',
     'Microsoft Outlook',
     'Slack',
-    'Microsoft OneNote',
     'Google Chrome',
     'Firefox',
     'iTerm',
     'VirtualBox',
     'Visual Studio Code',
-    'Microsoft Remote Desktop',
-    'Postman'
+    'Microsoft Remote Desktop'
 ]
 
 const dockPlistPath = `${process.env.HOME}/Library/Preferences/com.apple.dock.plist`

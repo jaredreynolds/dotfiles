@@ -70,8 +70,9 @@ pushd $USER_DOTFILES/customization/dock
 npm install -g yarn
 yarn install
 yarn start
-sudo killall Dock
 popd
+
+$USER_DOTFILES/customization/.macos
 
 # Link p4merge
 mkdir -p -m u=rwx,g=,o= ~/bin

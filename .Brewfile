@@ -55,7 +55,7 @@ cask "logitech-unifying"
 cask "microsoft-office"
 #cask "mightytext"
 cask "muzzle"
-#cask "onedrive"
+cask "onedrive"
 cask "osxfuse"
 cask "p4v" #p4merge
 cask "powershell"

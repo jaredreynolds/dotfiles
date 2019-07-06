@@ -78,6 +78,11 @@ $USER_DOTFILES/customization/.macos
 mkdir -p -m u=rwx,g=,o= ~/bin
 ln -fs ~/.dotfiles/files/p4merge ~/bin/p4merge
 
+# Copy p4merge config
+P4MERGE_SETTINGS="$HOME/Library/Preferences/com.perforce.p4merge"
+mkdir -p $P4MERGE_SETTINGS
+cp "$USER_DOTFILES/customization/p4merge/ApplicationSettings.xml" "$P4MERGE_SETTINGS"
+
 # Config git
 git config --global alias.dt difftool
 git config --global alias.mt mergetool

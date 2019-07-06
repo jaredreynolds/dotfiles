@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--perforce-xml-version=1.0-->
+<PropertyList varName="ApplicationSettings" IsManaged="TRUE">
+ <Font varName="ApplicationFont">
+  <family>helvetica neue</family>
+  <pointSize>12</pointSize>
+  <weight>true</weight>
+  <italic>false</italic>
+ </Font>
+ <String varName="CharSet">none</String>
+ <Bool varName="DarkTheme">false</Bool>
+ <String varName="DiffOption">dl</String>
+ <Font varName="Font">
+  <family>Courier</family>
+  <pointSize>18</pointSize>
+  <weight>true</weight>
+  <italic>false</italic>
+ </Font>
+ <Bool varName="InlineDiffsEnabled">true</Bool>
+ <String varName="LineEnding">Unix</String>
+ <PropertyList varName="Merge" IsManaged="TRUE">
+  <Bool varName="ShowBase">true</Bool>
+ </PropertyList>
+ <PropertyList varName="MergeDiff" IsManaged="TRUE">
+  <Bool varName="ShowLineNumbers">true</Bool>
+ </PropertyList>
+ <Bool varName="ShowTabsSpaces">true</Bool>
+ <Bool varName="TabInsertsSpaces">true</Bool>
+ <Int varName="TabWidth">4</Int>
+ </PropertyList>
+ <PropertyList varName="Windows" IsManaged="TRUE">
+  <PropertyList varName="Diff" IsManaged="TRUE">
+   <Bool varName="DiffCombined">false</Bool>
+  </PropertyList>
+  <PropertyList varName="Merge" IsManaged="TRUE">
+   <Bool varName="ShowBase">true</Bool>
+  </PropertyList>
+  <PropertyList varName="MergeDiff" IsManaged="TRUE">
+   <Bool varName="ShowLineNumbers">true</Bool>
+  </PropertyList>
+ </PropertyList>
+</PropertyList>

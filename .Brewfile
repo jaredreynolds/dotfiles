@@ -49,9 +49,12 @@ cask "amazon-music"
 cask "dotnet-sdk"
 cask "firefox"
 cask "flash-npapi"
+cask "google-backup-and-sync" #use for personal acct
 cask "google-chrome"
+cask "google-drive-file-stream" #use for cp acct
 cask "logitech-control-center"
-cask "logitech-unifying"
+#cask "logitech-unifying" #appears to be builtin? as of 2019-07-08, pkg wasn't compatible with Mojave
+cask "microsoft-azure-storage-explorer"
 cask "microsoft-office"
 #cask "mightytext"
 cask "muzzle"

@@ -48,7 +48,7 @@ brew "p7zip"
 cask "amazon-music"
 cask "dotnet-sdk"
 cask "firefox"
-cask "flash-npapi"
+#cask "flash-npapi" #flash itself deprecated
 cask "google-backup-and-sync" #use for personal acct
 cask "google-chrome"
 #cask "google-drive-file-stream" #use for cp acct

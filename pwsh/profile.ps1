@@ -11,3 +11,6 @@ try {
 catch {
   Write-Warning 'posh-git is not installed or is misconfigured.'
 }
+
+$env:CLICOLOR = 1
+$env:LSCOLORS = 'GxFxCxDxBxegedabagaced'

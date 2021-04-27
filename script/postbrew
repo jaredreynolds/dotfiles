@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
+set -eo pipefail
 
 # source bash profile to get environment variables set
-if [ -z "$USER_PROFILE_LOADED"] && [ -f "$HOME/.bash_profile" ]; then
+if [ -z "$USER_PROFILE_LOADED" ] && [ -f "$HOME/.bash_profile" ]; then
   source "$HOME/.bash_profile"
 fi
-
-# tell the script to exit with failure if any command
-# returns a non-zero exit code
-set -e
 
 DOTFILESDIRREL=$(dirname $0)
 cd $DOTFILESDIRREL/..
@@ -94,7 +91,10 @@ git config --global mergetool.prompt false
 
 # Add newer bash to allowed shells
 NEWBASH=/usr/local/bin/bash
-!(grep -q "$NEWBASH" /etc/shells) && echo $NEWBASH | sudo tee -a /etc/shells > /dev/null
+! (grep -q "$NEWBASH" /etc/shells) && echo $NEWBASH | sudo tee -a /etc/shells > /dev/null
 
 # Set newer bash as default
 if [ "$SHELL" != "$NEWBASH" ]; then sudo chsh -s $NEWBASH $USER; fi
+
+# Setup posh-git
+"$USER_DOTFILES/pwsh/install-posh-git.ps1"

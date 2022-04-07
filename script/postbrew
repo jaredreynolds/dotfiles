@@ -88,6 +88,8 @@ git config --global hub.protocol https
 git config --global merge.tool p4merge
 git config --global mergetool.keepTemporaries false
 git config --global mergetool.prompt false
+git config --global mergetool.p4merge.path /Applications/p4merge.app/Contents/Resources/launchp4merge
+git config --global init.defaultbranch main
 
 # Add newer bash to allowed shells
 NEWBASH=/usr/local/bin/bash

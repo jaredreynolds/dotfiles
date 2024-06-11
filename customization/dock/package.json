@@ -5,7 +5,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "simple-plist": "^0.2.1"
+    "simple-plist": "^1.4.0"
   },
   "license": "Unlicense"
 }
